@@ -2,14 +2,14 @@ import mysql.connector
 import os
 
 db = mysql.connector.connect(
-    host='localhost',
-    user='root',
-    passwd='password'
+    host='us-cdbr-east-06.cleardb.net',
+    user='bfa9f7985791d3',
+    passwd='ee0d1bc5'
 )
 
 def initDB():
     mycursor = db.cursor()
-    mycursor.execute('USE DEALERSHIP')
+    mycursor.execute('USE heroku_6c0730742d1403a')
 
 def displayMainMenu():
     print(' — — — — - - - OPTIONS - - - — — — - -')
